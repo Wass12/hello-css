@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../HTML/asset blog/index.css">
+  <style>
+    body {
+      background-image: url("paper.gif");
+      background-color: antiquewhite;
+      margin: 0%;
+    }
+
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 0.6;
+    
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+  </style>
+  <div id="headtext">
+    <h1 id="bg">Sign Up</h1>
+  </div>
+
+
+</head>
+
+<body>
+  <ul>
+    <li>
+      <a id="font" href="./index.html">Home</a>
+    </li>
+    <li>
+      <a id="font" href="./blog.html">Blog</a>
+    </li>
+    <li>
+      <a id="font" href="./Sign up.html">Sign up</a>
+    </li>
+    <li>
+      <a id="font" href="./about.html">About</a>
+    </li>
+  </ul>
+  <form action="/action_page.php">
+    <div class="container">
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <br>
+      <label for="fsn">
+        <b>First Name</b>
+      </label>
+      <br>
+      <input type="text" placeholder="First Name" name="fsn" required>
+      <br>
+      <label for="lsn">
+        <b>Last Name</b>
+      </label>
+      <br>
+      <input type="password" placeholder="Last Name" name="lsn" required>
+      <br>
+      <label for="email">
+        <b>E-mail</b>
+      </label>
+      <br>
+      <input type="password" placeholder="" name="eml" required>
+      <br>
+      <label for="phn">
+        <b>Phone Number</b>
+      </label>
+      <br>
+      <input type="text" placeholder="Phone Number" name="phn" required>
+      <br>
+      <label for="psw">
+        <b>Password</b>
+      </label>
+      <br>
+      <input type="text" placeholder="Password" name="psw" required>
+      <br>
+      <label for="cnfrm">
+        <b>Confirm Your Password</b>
+      </label>
+      <br>
+      <input type="text" placeholder="" name="cnfrm" required>
+      <br>
+      <label for="cnt">
+        <b>Country</b>
+      </label>
+      <br>
+
+      <form autocomplete="off" action="/action_page.php">
+        <div class="autocomplete" style="width:300px;">
+          <input id="myInput" type="text" name="myCountry" placeholder="Country">
+        </div>
+        <input type="submit">
+      </form>
+
+      <p>By creating an account you agree to our
+        <a href="#">Terms & Privacy</a>.</p>
+
+      <button type="submit" class="registerbtn">Register</button>
+    </div>
+
+    <div class="container signin">
+      <p>Already have an account?
+        <a href="#">Sign in</a>.</p>
+    </div>
+  </form>
+
+  <br>
+  <p2>Copyright & Trademark 2018</p2>
+
+</body>
+
+</html>
